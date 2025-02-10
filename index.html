@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Stella&#39;s Adventure Story!.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Stella&#39;s Adventure Story!" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="9B6E7622-9758-4AD3-87C7-3BF75E6F4D5F" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="700,200" size="100,100">(set: $name to &#39;Kai&#39;)(set: $name to (prompt: &#39;What is your first name?&#39;,&#39;&#39;))
+<tw-storydata name="Stella&#39;s Adventure Story!" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="9B6E7622-9758-4AD3-87C7-3BF75E6F4D5F" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="700,200" size="100,100">(set: $name to &#39;Kai&#39;)(set: $name to (prompt: &#39;What is your first name?&#39;,&#39;&#39;))
 
 $name go into walmart to do your usual shoping
 
@@ -48,7 +48,7 @@ src=&quot;crowd.mp3&quot; autoplay&gt;
  
  If you already have trolly, [[start]] your shopping trip. </tw-passagedata><tw-passagedata pid="5" name="fight" tags="" position="600,500" size="100,100">you fight the employee and they were super weak so you killed them and you go to jail 
 
-[[restart]]</tw-passagedata><tw-passagedata pid="6" name="get there manager" tags="" position="1200,400" size="100,100">good job! The manager fired the employee and said $name can get a 100% discount! So you bought your stuff and you left the store, on $name&#39;s way home the angry employee came up to you wanting to fight!
+Go Back to [[Start]]</tw-passagedata><tw-passagedata pid="6" name="get there manager" tags="" position="1200,400" size="100,100">good job! The manager fired the employee and said $name can get a 100% discount! So you bought your stuff and you left the store, on $name&#39;s way home the angry employee came up to you wanting to fight!
 
 What do you do?
 
@@ -71,7 +71,7 @@ you look in your [[pockets]]
 what do you find?
 
 If you already have money [[bribe]] the criminal
-</tw-passagedata><tw-passagedata pid="11" name="Get inside it and try to get it started" tags="" position="300,900" size="100,100"></tw-passagedata><tw-passagedata pid="12" name="just leave it" tags="" position="400,500" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="runs away" tags="" position="1000,700" size="100,100"></tw-passagedata><tw-passagedata pid="14" name="pockets" tags="" position="100,925" size="100,100">Choose the money
+</tw-passagedata><tw-passagedata pid="11" name="Get inside it and try to get it started" tags="" position="300,900" size="100,100"></tw-passagedata><tw-passagedata pid="12" name="just leave it" tags="" position="400,500" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="pockets" tags="" position="100,925" size="100,100">Choose the money
 
 &lt;/style&gt;&lt;center&gt;
 [[&lt;img src=&#39;bottlecapss.jpg&#39;&gt;-&gt;bottlecaps]]
@@ -80,18 +80,18 @@ If you already have money [[bribe]] the criminal
 &lt;/style&gt;&lt;right&gt;
 [[&lt;img src=&#39;money.jpg&#39;&gt;-&gt;money]]
 
-</tw-passagedata><tw-passagedata pid="15" name="bottlecaps" tags="" position="25,1100" size="100,100">These are bottlecaps not money you cannot bribe the criminal. Check your pockets
+</tw-passagedata><tw-passagedata pid="14" name="bottlecaps" tags="" position="25,1100" size="100,100">These are bottlecaps not money you cannot bribe the criminal. Check your pockets
 
 [[check again]]
-</tw-passagedata><tw-passagedata pid="16" name="coins" tags="" position="225,1050" size="100,100">these are fake coins not money you cannot [[bribe]] the criminal. Check your [[pockets]]
-</tw-passagedata><tw-passagedata pid="17" name="money" tags="" position="175,1250" size="100,100">(set: $money to true)
-Congratulations you have money, now you can [[bribe]] the criminal</tw-passagedata><tw-passagedata pid="18" name="bribe" tags="" position="0,925" size="100,100">{
+</tw-passagedata><tw-passagedata pid="15" name="coins" tags="" position="225,1050" size="100,100">these are fake coins not money you cannot [[bribe]] the criminal. Check your [[pockets]]
+</tw-passagedata><tw-passagedata pid="16" name="money" tags="" position="175,1250" size="100,100">(set: $money to true)
+Congratulations you have money, now you can [[bribe]] the criminal</tw-passagedata><tw-passagedata pid="17" name="bribe" tags="" position="0,925" size="100,100">{
 (if: ($money is true)) [congratulations $name you can bribe the criminal and escape safely]
 (else:) [$name you dont have any money go back and check your [[pockets]]]
-}</tw-passagedata><tw-passagedata pid="19" name="trolly park" tags="" position="800,925" size="100,100">You get to the trolly park, and see there is none there. so you go [[search]].</tw-passagedata><tw-passagedata pid="20" name="start" tags="" position="925,925" size="100,100">{
+}</tw-passagedata><tw-passagedata pid="18" name="trolly park" tags="" position="800,925" size="100,100">You get to the trolly park, and see there is none there. so you go [[search]].</tw-passagedata><tw-passagedata pid="19" name="start" tags="" position="925,925" size="100,100">{
 (if: ($trolly is true)) [congratulations $name you can start your [[shopping trip.]]]
 (else:) [$name you dont have a trolly go back and keep [[search]]ing]
-}</tw-passagedata><tw-passagedata pid="21" name="search" tags="" position="800,1050" size="100,100">You search the carpark and find a few things!
+}</tw-passagedata><tw-passagedata pid="20" name="search" tags="" position="800,1050" size="100,100">You search the carpark and find a few things!
 
 Choose the trolly. 
 
@@ -102,14 +102,16 @@ Choose the trolly.
 &lt;/style&gt;&lt;right&gt;
 [[&lt;img src=&#39;trolly.jpg&#39;&gt;-&gt;trolly]]
 
-</tw-passagedata><tw-passagedata pid="22" name="wrong trolly" tags="" position="800,1175" size="100,100">Wrong trolly, [[search]] to find the right one!</tw-passagedata><tw-passagedata pid="23" name="fake trolly" tags="" position="925,1175" size="100,100">You chose the trollly and when you put your stuff on it, its snapped right in half. [[search]] to find the right one.</tw-passagedata><tw-passagedata pid="24" name="trolly" tags="" position="675,1175" size="100,100">(set: $trolly to true)
-Congratulations you have the trolly, now you can start [[shopping]]</tw-passagedata><tw-passagedata pid="25" name="shopping trip." tags="" position="925,1050" size="100,100">you walk into the store with your trolly and you start to shop.</tw-passagedata><tw-passagedata pid="26" name="restart" tags="" position="600,625" size="100,100"></tw-passagedata><tw-passagedata pid="27" name="check again" tags="" position="25,1225" size="100,100">you check your pockets you find the [[money]]</tw-passagedata><tw-passagedata pid="28" name="shopping" tags="" position="675,1300" size="100,100">You start youre shopping trip and pulls out the list. it had:
+</tw-passagedata><tw-passagedata pid="21" name="wrong trolly" tags="" position="800,1175" size="100,100">Wrong trolly, [[search]] to find the right one!</tw-passagedata><tw-passagedata pid="22" name="fake trolly" tags="" position="925,1175" size="100,100">You chose the trollly and when you put your stuff on it, its snapped right in half. [[search]] to find the right one.</tw-passagedata><tw-passagedata pid="23" name="trolly" tags="" position="675,1175" size="100,100">(set: $trolly to true)
+Congratulations you have the trolly, now you can start [[shopping]]</tw-passagedata><tw-passagedata pid="24" name="shopping trip." tags="" position="925,1050" size="100,100">you walk into the store with your trolly and you start to shop.</tw-passagedata><tw-passagedata pid="25" name="check again" tags="" position="25,1225" size="100,100">you check your pockets you find the [[money]]</tw-passagedata><tw-passagedata pid="26" name="shopping" tags="" position="675,1300" size="100,100">You start youre shopping trip and pulls out the list. it had:
 
 [[rice]]
 [[cookies]]
 [[glue]]
 
-which isle will you go to first? pick an object above ↑</tw-passagedata><tw-passagedata pid="29" name="glue" tags="" position="675,1425" size="100,100"></tw-passagedata><tw-passagedata pid="30" name="cookies" tags="" position="800,1425" size="100,100"></tw-passagedata><tw-passagedata pid="31" name="rice" tags="" position="550,1425" size="100,100"></tw-passagedata></tw-storydata>
+which isle will you go to first? pick an object above ↑</tw-passagedata><tw-passagedata pid="27" name="glue" tags="" position="675,1425" size="100,100"></tw-passagedata><tw-passagedata pid="28" name="cookies" tags="" position="800,1425" size="100,100"></tw-passagedata><tw-passagedata pid="29" name="rice" tags="" position="550,1425" size="100,100"></tw-passagedata><tw-passagedata pid="30" name="runs away" tags="" position="1075,625" size="100,100">You run away but then the cops comes and arrest you becuase when you beat up the employee he died.
+
+Go back to the [[Start]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
