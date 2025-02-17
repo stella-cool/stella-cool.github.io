@@ -9,7 +9,14 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Stella&#39;s Adventure Story!.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Stella&#39;s Adventure Story!" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="9B6E7622-9758-4AD3-87C7-3BF75E6F4D5F" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="700,200" size="100,100">(set: $name to &#39;Kai&#39;)(set: $name to (prompt: &#39;What is your first name?&#39;,&#39;&#39;))
+<tw-storydata name="Stella&#39;s Adventure Story!" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="9B6E7622-9758-4AD3-87C7-3BF75E6F4D5F" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+tw-story[tags~="run"] {
+background-image:url("angryemployee.jpg");
+background-size:cover;
+color: black;
+font-family: “Arial Bold”, sans-serif;
+font-size: 200%;  
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="700,200" size="100,100">(set: $name to &#39;Kai&#39;)(set: $name to (prompt: &#39;What is your first name?&#39;,&#39;&#39;))
 
 $name go into walmart to do your usual shoping
 
@@ -30,12 +37,7 @@ src=&quot;criminal.jpg&quot;/&gt;
 [[run!]]
 [[try to keep the peace]]
 
-</tw-passagedata><tw-passagedata pid="3" name="run away" tags="" position="1000,325" size="100,100">There was a scary employee coming to get you!
-
-&lt;/style&gt;&lt;center&gt;
-&lt;img
-src=&quot;angryemployee.jpg&quot;/&gt;
-&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="3" name="run away" tags="run" position="1000,325" size="100,100">There was a scary employee coming to get you!
 
 [[fight]]
 [[get there manager]]
@@ -109,9 +111,15 @@ Congratulations you have the trolly, now you can start [[shopping]]</tw-passaged
 [[cookies]]
 [[glue]]
 
-which isle will you go to first? pick an object above ↑</tw-passagedata><tw-passagedata pid="27" name="glue" tags="" position="675,1425" size="100,100"></tw-passagedata><tw-passagedata pid="28" name="cookies" tags="" position="800,1425" size="100,100"></tw-passagedata><tw-passagedata pid="29" name="rice" tags="" position="550,1425" size="100,100"></tw-passagedata><tw-passagedata pid="30" name="runs away" tags="" position="1075,625" size="100,100">You run away but then the cops comes and arrest you becuase when you beat up the employee he died.
+which isle will you go to first? pick an object above ↑</tw-passagedata><tw-passagedata pid="27" name="glue" tags="" position="675,1425" size="100,100">you go down the isle where the glue is and grab a big bottle of it
+ and throw it in the trolly but when you threw it down it exploded and broke open and glue got all in the trolly. what will you do?
+ 
+ [[inform a employee]]
+ [[make a run for it]]
+ [[try clean it up]]</tw-passagedata><tw-passagedata pid="28" name="cookies" tags="" position="800,1425" size="100,100">0000000000000.
+11111111130333003................................................................................3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333088888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888</tw-passagedata><tw-passagedata pid="29" name="rice" tags="" position="550,1425" size="100,100"></tw-passagedata><tw-passagedata pid="30" name="runs away" tags="" position="1075,625" size="100,100">You run away but then the cops comes and arrest you becuase when you beat up the employee he died.
 
-Go back to the [[Start]]</tw-passagedata></tw-storydata>
+Go back to the [[Start]]</tw-passagedata><tw-passagedata pid="31" name="inform a employee" tags="" position="675,1550" size="100,100"></tw-passagedata><tw-passagedata pid="32" name="make a run for it" tags="" position="800,1550" size="100,100"></tw-passagedata><tw-passagedata pid="33" name="try clean it up" tags="" position="550,1550" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
